@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>两侧自适应中间定宽</title>
+  <style>
+  .wrap {
+  	position: relative;
+    width: 100%;
+  }
+
+  .left-box {
+    float: left;
+    width: 50%;
+  }
+
+  .left-box .left {
+  	margin-right: 100px;
+  	background-color: red;
+  }
+
+  .right-box {
+    margin-left: 50%;
+    overflow: hidden;
+  }
+
+  .right-box .right {
+  	margin-left: 100px;
+  	background-color: blue;
+  }
+  .center {
+  	position: absolute;
+  	top: 0;
+  	left: 50%;
+  	margin-left: -100px;
+  	width: 200px;
+  	background-color: grey;
+  }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="left-box">
+      <div class="left">
+        left
+      </div>
+    </div>
+    <div class="right-box">
+      <div class="right">
+        right
+      </div>
+    </div>
+    <div class="center">
+      center
+    </div>
+  </div>
+</body>
+
+</html>
